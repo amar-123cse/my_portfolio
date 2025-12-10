@@ -24,10 +24,11 @@
             transition: background-color 0.3s ease, color 0.3s ease;
         }
         
-        .dark body {
-            background-color: #0f172a;
-            color: #e2e8f0;
-        }
+       body.dark {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
         
         h1, h2, h3, h4, h5 {
             font-family: 'Poppins', sans-serif;
@@ -106,15 +107,16 @@
             transition: width 1.5s ease-in-out;
         }
         
-        .hero-bg {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
-        }
-        
-        .dark .hero-bg {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
-        }
-        
-        .text-gradient {
+.hero-bg {
+  background: linear-gradient(135deg, rgba(148,163,184,0.12) 0%, rgba(148,163,184,0.05) 100%);
+}
+
+body.dark .hero-bg {
+  background: linear-gradient(135deg, rgba(15,23,42,1) 0%, rgba(15,23,42,1) 100%);
+}
+
+
+ .text-gradient {
             background: linear-gradient(90deg, #3b82f6, #8b5cf6);
             -webkit-background-clip: text;
             background-clip: text;
@@ -209,13 +211,7 @@
             background-color: rgba(15, 23, 42, 0.9);
         }
         
-        .dark .bg-white {
-            background-color: #1e293b;
-        }
-        
-        .dark .bg-gray-50 {
-            background-color: #0f172a;
-        }
+       
         
         .dark .text-gray-600, .dark .text-gray-700 {
             color: #cbd5e1;
@@ -360,7 +356,8 @@
 </head>
 <body class="theme-transition">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm dark:bg-slate-900/90">
+    <nav class="fixed w-full z-50 bg-white dark:bg-slate-900 shadow-sm">
+
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-gray-800 dark:text-white">My<span class="text-blue-500">Portfolio</span></a>
             
@@ -410,8 +407,8 @@
                 <div class="md:w-3/5 mb-12 md:mb-0">
                     <p class="text-blue-500 dark:text-blue-400 font-medium mb-2">Hello, I'm</p>
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-800 dark:text-white mb-4">Amar <span class="text-gradient">Kumar</span></h1>
-                    <h2 class="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-6">Full Stack Developer & Software Engineer</h2>
-                    <p class="text-gray-600 dark:text-gray-300 mb-8 text-lg max-w-2xl">Specializing in C, Java, DBMS/SQL, DSA, and modern web technologies (HTML, CSS, JavaScript, Tailwind CSS). I build efficient, scalable applications with clean code and optimal performance.</p>
+                    <h2 class="text-2xl md:text-3xl text-gray-600 dark:text-black-300 mb-6">Full Stack Developer & Software Engineer</h2>
+                    <p class="text-gray-600 dark:text-black-300 mb-8 text-lg max-w-2xl">Specializing in C, Java, DBMS/SQL, DSA, and modern web technologies (HTML, CSS, JavaScript, Tailwind CSS). I build efficient, scalable applications with clean code and optimal performance.</p>
                     <div class="flex flex-wrap gap-4">
                         <a href="#projects" class="btn-primary">View My Projects</a>
                         <a href="#contact" class="border border-blue-500 text-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/30 dark:border-blue-400 dark:text-blue-400 px-6 py-3 rounded-lg font-medium transition">Contact Me</a>
@@ -422,20 +419,20 @@
                     
                     <div class="flex flex-wrap mt-12 gap-6">
                         <div class="text-center">
-                            <p class="text-3xl font-bold text-gray-800 dark:text-white">5+</p>
-                            <p class="text-gray-600 dark:text-gray-400">Projects Completed</p>
+                            <p class="text-3xl font-bold text-black-800 dark:text-white">5+</p>
+                            <p class="text-gray-600 dark:text-black-400">Projects Completed</p>
                         </div>
                         <div class="text-center">
-                            <p class="text-3xl font-bold text-gray-800 dark:text-white">5+</p>
-                            <p class="text-gray-600 dark:text-gray-400">Certifications</p>
+                            <p class="text-3xl font-bold text-black-800 dark:text-white">5+</p>
+                            <p class="text-gray-600 dark:text-black-400">Certifications</p>
                         </div>
                         <div class="text-center">
-                            <p class="text-3xl font-bold text-gray-800 dark:text-white">8</p>
-                            <p class="text-gray-600 dark:text-gray-400">Tech Stacks</p>
+                            <p class="text-3xl font-bold text-black-800 dark:text-white">8</p>
+                            <p class="text-gray-600 dark:text-black-400">Tech Stacks</p>
                         </div>
                         <div class="text-center">
-                            <p class="text-3xl font-bold text-gray-800 dark:text-white">1+</p>
-                            <p class="text-gray-600 dark:text-gray-400">Years Experience</p>
+                            <p class="text-3xl font-bold text-black-800 dark:text-white">1+</p>
+                            <p class="text-gray-600 dark:text-black-400">Years Experience</p>
                         </div>
                     </div>
                 </div>
@@ -514,8 +511,8 @@
                         
                         <div class="space-y-6">
                             <div>
-                                <p class="text-gray-500 dark:text-gray-400 mb-1">Full Name</p>
-                                <p class="font-medium text-gray-800 dark:text-gray-200">Amar kumar</p>
+                                <p class="text-gray-500 dark:text-black-400 mb-1">Full Name</p>
+                                <p class="font-medium text-black-800 dark:text-black-200">Amar kumar</p>
                             </div>
                             <div>
                                 <p class="text-gray-500 dark:text-gray-400 mb-1">Location</p>
